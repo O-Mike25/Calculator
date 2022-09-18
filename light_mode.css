@@ -1,0 +1,190 @@
+#body{
+    box-sizing: border-box;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f3f3;
+}
+
+#container{
+    height: 400px;
+    width: 200px;
+    border-radius: 15px;
+    display: flex;
+}
+
+#calculator{
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+#mode{
+    margin-top: 20px;
+    width: 60px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction:row;
+    background-color: #f9f9f9;
+}
+
+#mode div {
+    
+    width: 30px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#dark_mode{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./sun_lm.png");
+}
+
+#light_mode{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./moon_lm.png");
+}
+
+
+#screen{
+    margin-top: 65px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+#screen #operation{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #ffffff;
+    color: black ;
+    height: 15px;
+    font-size: 15px;
+}
+
+#screen #result{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 5px;
+    background-color: #ffffff;
+    color: black;
+    height: 25px;
+    font-size: 30px;
+}
+
+.sp_operator{
+    color: #ec6666;
+}
+
+.percent_operator{
+    color: #26f9d2;
+}
+
+
+#keyboard{
+    margin-top: 15px;
+    height: 230px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+}
+
+#keyboard div{
+    display: flex;
+    flex-direction: row;
+}
+
+#keyboard div button {
+    width: 30px;
+    height: 30px;
+    margin:5px 8px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    border: none;
+}
+
+#delete{
+    background-image: url(./del_lm.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#sign{
+    background-image: url(./sign.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#clear ,#sign ,#percent
+{
+    
+    color: #26f9d2;
+}
+
+#point,.number{
+    color: black;
+}
+
+#clear ,#sign ,#percent
+{
+    
+    color: #26f9d2;
+}
+
+#division{
+    color: transparent;
+    background-image: url(./divide_lm.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#minus{
+    color: transparent;
+    background-image: url(./minus_lm.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#plus{
+    color: transparent;
+    color: transparent;
+    background-image: url(./plus_lm.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#time{
+    color: transparent;
+    background-image: url(./time_lm.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#equal{
+    background-image: url(./equal_lm.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+}
+
