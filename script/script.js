@@ -211,12 +211,12 @@ body.append(container)
 // Logic of the Calculator
 dark_mode.addEventListener("click",()=>{
     const sheet = document.getElementById("link_dm");
-    sheet.setAttribute("href","./dark_mode.css")
+    sheet.setAttribute("href","./assets/css/dark_mode.css")
 })
 
 light_mode.addEventListener("click",()=>{
     const sheet = document.getElementById("link_dm");
-    sheet.setAttribute("href","./light_mode.css")
+    sheet.setAttribute("href","./assets/css/light_mode.css")
 })
 
 const numbers = document.getElementsByClassName("number");

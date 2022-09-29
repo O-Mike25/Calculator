@@ -47,13 +47,13 @@
 #dark_mode{
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("./sun_dm.png");
+    background-image: url("../images/sun_dm.png");
 }
 
 #light_mode{
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("./moon_dm.png");
+    background-image: url("../images/moon_dm.png");
 }
 
 
@@ -124,13 +124,13 @@
 }
 
 #delete{
-    background-image: url(./del_dm.png);
+    background-image: url("../images/del_dm.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #sign{
-    background-image: url(./sign.png);
+    background-image: url("../images/sign.png");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -146,35 +146,35 @@
 
 #division{
     color: transparent;
-    background-image: url(./divide_dm.png);
+    background-image: url("../images/divide_dm.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #minus{
     color: transparent;
-    background-image: url(./minus_dm.png);
+    background-image: url("../images/minus_dm.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #plus{
     color: transparent;
-    background-image: url(./plus_dm.png);
+    background-image: url("../images/plus_dm.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #time{
     color: transparent;
-    background-image: url(./time_dm.png);
+    background-image: url("../images/time_dm.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #equal{
     color: transparent;
-    background-image: url(./equal_dm.png);
+    background-image: url("../images/equal_dm.png");
     background-repeat: no-repeat;
     background-position: center;
 }
