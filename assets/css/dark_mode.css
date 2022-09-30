@@ -77,6 +77,10 @@
     font-size: 15px;
 }
 
+#screen #operation #operation_value{
+    overflow:scroll;
+}
+
 #screen #result{
     display: flex;
     flex-direction: row;
@@ -87,6 +91,10 @@
     color: #ffffff;
     height: 25px;
     font-size: 30px;
+}
+
+#screen #operation #result_value{
+    overflow:scroll;
 }
 
 .sp_operator{
@@ -178,10 +186,4 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-
-/*#division,#equal,#time,#minus,#plus{
-    font-size: 20px;
-    color: #ec6666
-}*/
-
 

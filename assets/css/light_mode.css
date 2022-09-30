@@ -77,6 +77,10 @@
     font-size: 15px;
 }
 
+#screen #operation #operation_value{
+    overflow:scroll;
+}
+
 #screen #result{
     display: flex;
     flex-direction: row;
@@ -87,6 +91,10 @@
     color: black;
     height: 25px;
     font-size: 30px;
+}
+
+#screen #operation #result_value{
+    overflow:scroll;
 }
 
 .sp_operator{
@@ -188,3 +196,6 @@
     color: transparent;
 }
 
+.visibility{
+    visibility: hidden;
+}

@@ -1,12 +1,6 @@
-//const { text } = require("body-parser");
-
-//const { spawn } = require("child_process");
-
-//const { genericTypeAnnotation } = require("@babel/types");
-
 // Creating each composant of the calculator
 
-const body = document.getElementById("body") ;
+const body = document.getElementById("body") ; 
 
 const container = document.createElement("div");
 container.id = "container";
@@ -98,12 +92,12 @@ const txt_plus = document.createTextNode("+");
 const btn_divison = document.createElement("button");
 btn_divison.id = "division";
 btn_divison.className = "operator";
-const txt_divison = document.createTextNode("/");
+const txt_divison = document.createTextNode("÷");
 
 const btn_time = document.createElement("button");
 btn_time.id = "time";
 btn_time.className = "operator";
-const txt_time = document.createTextNode("*");
+const txt_time = document.createTextNode("×");
 
 const btn_equal = document.createElement("button");
 btn_equal.id = "equal";
@@ -216,7 +210,7 @@ dark_mode.addEventListener("click",()=>{
 
 light_mode.addEventListener("click",()=>{
     const sheet = document.getElementById("link_dm");
-    sheet.setAttribute("href","./assets/css/light_mode.css")
+    sheet.setAttribute("href","./assets/css/light_mode.css");
 })
 
 const numbers = document.getElementsByClassName("number");
@@ -267,7 +261,7 @@ del_op.addEventListener("click",()=>{
 
 equal_op.addEventListener("click",()=>{
     try{
-        operation_string=operation_array.join("").replace("%","percent");
+        operation_string=operation_array.join("").replace("%","percent").replace("÷","/").replace("×","*");
         printOutput(math.evaluate(operation_string).toString());
     }
     catch(error){
