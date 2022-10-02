@@ -47,13 +47,13 @@
 #dark_mode{
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("./sun_lm.png");
+    background-image: url("../images/sun_lm.png");
 }
 
 #light_mode{
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("./moon_lm.png");
+    background-image: url("../images/moon_lm.png");
 }
 
 
@@ -77,6 +77,10 @@
     font-size: 15px;
 }
 
+#screen #operation #operation_value{
+    overflow:scroll;
+}
+
 #screen #result{
     display: flex;
     flex-direction: row;
@@ -87,6 +91,10 @@
     color: black;
     height: 25px;
     font-size: 30px;
+}
+
+#screen #operation #result_value{
+    overflow:scroll;
 }
 
 .sp_operator{
@@ -125,13 +133,13 @@
 }
 
 #delete{
-    background-image: url(./del_lm.png);
+    background-image: url("../images/del_lm.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #sign{
-    background-image: url(./sign.png);
+    background-image: url("../images/sign.png");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -154,14 +162,14 @@
 
 #division{
     color: transparent;
-    background-image: url(./divide_lm.png);
+    background-image: url("../images/divide_lm.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #minus{
     color: transparent;
-    background-image: url(./minus_lm.png);
+    background-image: url("../images/minus_lm.png");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -169,22 +177,25 @@
 #plus{
     color: transparent;
     color: transparent;
-    background-image: url(./plus_lm.png);
+    background-image: url("../images/plus_lm.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #time{
     color: transparent;
-    background-image: url(./time_lm.png);
+    background-image: url("../images/time_lm.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #equal{
-    background-image: url(./equal_lm.png);
+    background-image: url("../images/equal_lm.png");
     background-repeat: no-repeat;
     background-position: center;
     color: transparent;
 }
 
+.visibility{
+    visibility: hidden;
+}

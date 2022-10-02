@@ -1,12 +1,6 @@
-//const { text } = require("body-parser");
-
-//const { spawn } = require("child_process");
-
-//const { genericTypeAnnotation } = require("@babel/types");
-
 // Creating each composant of the calculator
 
-const body = document.getElementById("body") ;
+const body = document.getElementById("body") ; 
 
 const container = document.createElement("div");
 container.id = "container";
@@ -98,12 +92,12 @@ const txt_plus = document.createTextNode("+");
 const btn_divison = document.createElement("button");
 btn_divison.id = "division";
 btn_divison.className = "operator";
-const txt_divison = document.createTextNode("/");
+const txt_divison = document.createTextNode("÷");
 
 const btn_time = document.createElement("button");
 btn_time.id = "time";
 btn_time.className = "operator";
-const txt_time = document.createTextNode("*");
+const txt_time = document.createTextNode("×");
 
 const btn_equal = document.createElement("button");
 btn_equal.id = "equal";
@@ -210,13 +204,91 @@ body.append(container)
 
 // Logic of the Calculator
 dark_mode.addEventListener("click",()=>{
-    const sheet = document.getElementById("link_dm");
-    sheet.setAttribute("href","./dark_mode.css")
+
+    const calculator = document.getElementById("calculator");
+    calculator.style.backgroundColor = "#22252d";
+
+    const mode = document.getElementById("mode");
+    mode.style.backgroundColor = "#292d36";
+
+    const dm = document.getElementById("dark_mode");
+    dm.backgroundImage = "../images/sun_dm.png";
+
+    const lm = document.getElementById("light_mode");
+    lm.backgroundImage = "../images/moon_dm.png";
+
+    const operation =document.getElementById("operation");
+    operation.style.backgroundColor = "#22252d";
+    operation.style.color= "#ffffff";
+
+    const result = document.getElementById("result");
+    result.style.backgroundColor = "#22252d";
+    result.style.color = "#ffffff";
+
+    const keyboard = document.getElementById("keyboard");
+    keyboard.style.backgroundColor="#292d36"
+    for(let i=0;i<5;i++)
+    {
+        for(let j=0;j<4;j++)
+        {
+            keyboard.childNodes[i].childNodes[j].style.backgroundColor = "#272b33" ;
+        }
+    }
+
+    const point = document.getElementById("point");
+    point.style.color = "#e6e7e7";
+
+    const number = document.getElementsByClassName("number");
+    for(let i=0;i<number.length;i++)
+    {
+        number[i].style.color="#e6e7e7";
+    }
+
+
+
 })
 
 light_mode.addEventListener("click",()=>{
-    const sheet = document.getElementById("link_dm");
-    sheet.setAttribute("href","./light_mode.css")
+
+    const calculator = document.getElementById("calculator");
+    calculator.style.backgroundColor = "#ffffff";
+
+    const mode = document.getElementById("mode");
+    mode.style.backgroundColor = "#f9f9f9";
+
+    const dm = document.getElementById("dark_mode");
+    dm.backgroundImage = "../images/sun_lm.png";
+
+    const lm = document.getElementById("light_mode");
+    lm.backgroundImage = "../images/moon_lm.png";
+
+    const operation =document.getElementById("operation");
+    operation.style.backgroundColor = "#ffffff";
+    operation.style.color= "black";
+
+    const result = document.getElementById("result");
+    result.style.backgroundColor = "#ffffff";
+    result.style.color = "black";
+
+    const keyboard = document.getElementById("keyboard");
+    keyboard.style.backgroundColor="#f9f9f9"
+    for(let i=0;i<5;i++)
+    {
+        for(let j=0;j<4;j++)
+        {
+            keyboard.childNodes[i].childNodes[j].style.backgroundColor = "#f7f7f7" ;
+        }
+    }
+
+    const point = document.getElementById("point");
+    point.style.color = "black";
+
+    const number = document.getElementsByClassName("number");
+    for(let i=0;i<number.length;i++)
+    {
+        number[i].style.color="black";
+    }
+
 })
 
 const numbers = document.getElementsByClassName("number");
@@ -267,7 +339,7 @@ del_op.addEventListener("click",()=>{
 
 equal_op.addEventListener("click",()=>{
     try{
-        operation_string=operation_array.join("").replace("%","percent");
+        operation_string=operation_array.join("").replace("%","percent").replace("÷","/").replace("×","*");
         printOutput(math.evaluate(operation_string).toString());
     }
     catch(error){
