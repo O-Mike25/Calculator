@@ -204,13 +204,91 @@ body.append(container)
 
 // Logic of the Calculator
 dark_mode.addEventListener("click",()=>{
-    const sheet = document.getElementById("link_dm");
-    sheet.setAttribute("href","./assets/css/dark_mode.css")
+
+    const calculator = document.getElementById("calculator");
+    calculator.style.backgroundColor = "#22252d";
+
+    const mode = document.getElementById("mode");
+    mode.style.backgroundColor = "#292d36";
+
+    const dm = document.getElementById("dark_mode");
+    dm.backgroundImage = "../images/sun_dm.png";
+
+    const lm = document.getElementById("light_mode");
+    lm.backgroundImage = "../images/moon_dm.png";
+
+    const operation =document.getElementById("operation");
+    operation.style.backgroundColor = "#22252d";
+    operation.style.color= "#ffffff";
+
+    const result = document.getElementById("result");
+    result.style.backgroundColor = "#22252d";
+    result.style.color = "#ffffff";
+
+    const keyboard = document.getElementById("keyboard");
+    keyboard.style.backgroundColor="#292d36"
+    for(let i=0;i<5;i++)
+    {
+        for(let j=0;j<4;j++)
+        {
+            keyboard.childNodes[i].childNodes[j].style.backgroundColor = "#272b33" ;
+        }
+    }
+
+    const point = document.getElementById("point");
+    point.style.color = "#e6e7e7";
+
+    const number = document.getElementsByClassName("number");
+    for(let i=0;i<number.length;i++)
+    {
+        number[i].style.color="#e6e7e7";
+    }
+
+
+
 })
 
 light_mode.addEventListener("click",()=>{
-    const sheet = document.getElementById("link_dm");
-    sheet.setAttribute("href","./assets/css/light_mode.css");
+
+    const calculator = document.getElementById("calculator");
+    calculator.style.backgroundColor = "#ffffff";
+
+    const mode = document.getElementById("mode");
+    mode.style.backgroundColor = "#f9f9f9";
+
+    const dm = document.getElementById("dark_mode");
+    dm.backgroundImage = "../images/sun_lm.png";
+
+    const lm = document.getElementById("light_mode");
+    lm.backgroundImage = "../images/moon_lm.png";
+
+    const operation =document.getElementById("operation");
+    operation.style.backgroundColor = "#ffffff";
+    operation.style.color= "black";
+
+    const result = document.getElementById("result");
+    result.style.backgroundColor = "#ffffff";
+    result.style.color = "black";
+
+    const keyboard = document.getElementById("keyboard");
+    keyboard.style.backgroundColor="#f9f9f9"
+    for(let i=0;i<5;i++)
+    {
+        for(let j=0;j<4;j++)
+        {
+            keyboard.childNodes[i].childNodes[j].style.backgroundColor = "#f7f7f7" ;
+        }
+    }
+
+    const point = document.getElementById("point");
+    point.style.color = "black";
+
+    const number = document.getElementsByClassName("number");
+    for(let i=0;i<number.length;i++)
+    {
+        number[i].style.color="black";
+    }
+
 })
 
 const numbers = document.getElementsByClassName("number");

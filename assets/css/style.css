@@ -1,0 +1,189 @@
+#body{
+    box-sizing: border-box;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f3f3;
+}
+
+#container{
+    height: 400px;
+    width: 200px;
+    border-radius: 15px;
+    display: flex;
+}
+
+#calculator{
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #22252d;
+}
+
+#mode{
+    margin-top: 20px;
+    width: 60px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction:row;
+    background-color: #292d36;
+}
+
+#mode div {
+    
+    width: 30px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#dark_mode{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/sun_dm.png");
+}
+
+#light_mode{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/moon_dm.png");
+}
+
+
+#screen{
+    margin-top: 65px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+#screen #operation{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #22252d;
+    color: #ffffff ;
+    height: 15px;
+    font-size: 15px;
+}
+
+#screen #operation #operation_value{
+    overflow:scroll;
+}
+
+#screen #result{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 5px;
+    background-color: #22252d;
+    color: #ffffff;
+    height: 25px;
+    font-size: 30px;
+}
+
+#screen #operation #result_value{
+    overflow:scroll;
+}
+
+.sp_operator{
+    color: #ec6666;
+}
+
+.percent_operator{
+    color: #26f9d2;
+}
+
+#keyboard{
+    margin-top: 15px;
+    height: 230px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #292d36;
+}
+
+#keyboard div{
+    display: flex;
+    flex-direction: row;
+}
+
+#keyboard div button {
+    width: 30px;
+    height: 30px;
+    margin:5px 8px;
+    background-color: #272b33;
+    border-radius: 10px;
+    border: none;
+}
+
+#delete{
+    background-image: url("../images/del_dm.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#sign{
+    background-image: url("../images/sign.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#point,.number{
+    color: #e6e7e7;
+}
+
+#clear ,#sign ,#percent
+{
+    color: #26f9d2;
+}
+
+#division{
+    color: transparent;
+    background-image: url("../images/divide_dm.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#minus{
+    color: transparent;
+    background-image: url("../images/minus_dm.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#plus{
+    color: transparent;
+    background-image: url("../images/plus_dm.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#time{
+    color: transparent;
+    background-image: url("../images/time_dm.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#equal{
+    color: transparent;
+    background-image: url("../images/equal_dm.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
